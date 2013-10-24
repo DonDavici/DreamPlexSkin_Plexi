@@ -17,9 +17,13 @@
 	<guiElement name="key_zero" path="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/key_0.png" />
 	<guiElement name="key_nine" path="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/key_9.png" />
 
-	<!-- CINE VIEWS -->
-	<cineView name="List" apiLevel="1" itemsPerPage="6" screen="DPS_ViewList"/>
-	<cineView name="long List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewListLong" showBackdrop="false" />
-	<cineView name="Backdrop" apiLevel="1" itemsPerPage="6" screen="DPS_ViewBackdrop" backdropHeight="720" backdropWidth="1280" backdrop_postfix="_backdrop_1280x720.jpg"/>
+	<!-- MOVIE VIEWS -->
+	<movieView name="List" apiLevel="1" itemsPerPage="6" screen="DPS_ViewList"/>
+	<movieView name="long List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewListLong" showBackdrop="false" />
+	<movieView name="Backdrop" apiLevel="1" itemsPerPage="6" screen="DPS_ViewBackdrop" backdropHeight="720" backdropWidth="1280" backdrop_postfix="_backdrop_1280x720.jpg"/>
 
+	<!-- SHOW VIEWS -->
+	<showView name="List" apiLevel="1" itemsPerPage="6" screen="DPS_ViewList"/>
+	<showView name="long List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewListLong" showBackdrop="false" />
+	<showView name="Backdrop" apiLevel="1" itemsPerPage="6" screen="DPS_ViewBackdrop" backdropHeight="720" backdropWidth="1280" backdrop_postfix="_backdrop_1280x720.jpg"/>
 </xml>
