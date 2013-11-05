@@ -22,30 +22,48 @@
 
 	<!-- MOVIE VIEWS -->
 	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList">
+	<element name="tag" visible="False" />
 	</movieView>
 	
-	<movieView name="long List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewListLong">
+	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong">
 		<element name="backdrop" visible="False"/>
 	</movieView>
 	
 	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" >
-		<element name="backdrop" visible="True" showBackdrop="False" />
+	    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>	
 	</movieView>
 	
 	<!-- SHOW VIEWS -->
     
-	<showView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop">
+	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong">
 		<subView name="ShowSeasons">
 			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
-			<element name="genre" visible="False"/>
+			<element name="genre" visible="False" />
+		    <element name="year" visible="False" />
+			<element name="title" visible="True" xCoord="515" yCoord="192" />
+		    <element name="poster" visible="True" xCoord="505" yCoord="237" />
+		    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
+			<element name="shortDescription" visible="True" xCoord="735" yCoord="227" />
+		    <element name="runtime" visible="False" />
+		    <element name="rated" visible="False" />
+		    <element name="total" visible="False" />
 		</subView>
 		
 		<subView name="ShowEpisodes">
 			<element name="audio" visible="False"/>
+		    <element name="genre" visible="True" xCoord="585" yCoord="295" />
+		    <element name="title" visible="True" xCoord="515" yCoord="190" />
+			<element name="year" visible="True" />
+		    <element name="runtime" visible="True" xCoord="940" yCoord="235" />
+		    <element name="rated" visible="True" />
+		    <element name="backdrop" visible="False" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
+		    <element name="poster" visible="True" xCoord="505" yCoord="291" />
+		    <element name="shortDescription" visible="True" xCoord="735" yCoord="282" />
+		    <element name="total" visible="True" />
 		</subView>
 	</showView>
 
-	<showView name="long List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewListLong" showBackdrop="False">
+	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False">
 		<element name="backdrop" visible="False"/>
 	</showView>
 
