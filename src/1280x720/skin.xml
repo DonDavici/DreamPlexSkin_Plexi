@@ -319,8 +319,9 @@
 		<widget name="genreLabel" transparent="1" zPosition="4" halign="left" position="920,60" size="120,30" font="Regular; 22" backgroundColor="#40000000"/>
 		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="left" position="620,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
 		<widget name="yearLabel" transparent="1" zPosition="4" halign="left" position="805,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
+        <widget name="subtitlesLabel" transparent="1" zPosition="4" halign="left" position="805,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
 
-		<widget name="genre" transparent="1" zPosition="4" halign="left" valign="top"  position="994,60" size="250,30" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
+        <widget name="genre" transparent="1" zPosition="4" halign="left" valign="top"  position="994,60" size="250,30" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
 		<widget name="runtime" transparent="1" zPosition="4" halign="left" valign="top" position="718,60" size="160,30" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
 		<widget name="year" transparent="1" zPosition="4" halign="left" valign="top" position="860,60" size="160,30" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
 		<eLabel backgroundColor="#40000000"	position="670,652" zPosition="46" size="560,40"  transparent="0" />			
