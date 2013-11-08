@@ -18,7 +18,28 @@
           <convert type="ClockToText">Format:%A</convert>
         </widget>
         <eLabel backgroundColor="#40000000" position="264,51" zPosition="-1" size="340,320"  transparent="0" />
-        <ePixmap  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex.png" position="310,85" size="256,256" alphatest="blend" />
+        <!--ePixmap  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex.png" position="310,85" size="256,256" alphatest="blend" /-->
+        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex.png" position="310,85" size="256,256" alphatest="blend" >
+            <convert type="MenuEntryCompare">serverEntry</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_info.png" position="310,85" size="256,256" alphatest="blend" >
+            <convert type="MenuEntryCompare">aboutEntry</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_system.png" position="310,85" size="256,256" alphatest="blend" >
+            <convert type="MenuEntryCompare">systemEntry</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_movies.png" position="310,85" size="256,256" alphatest="blend" >
+            <convert type="MenuEntryCompare">movieEntry</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_shows.png" position="310,85" size="256,256" alphatest="blend" >
+            <convert type="MenuEntryCompare">showEntry</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+
 		<eLabel backgroundColor="#40000000" position="645,51" size="412,565"  zPosition="-11"  transparent="0"/>
 		
        </screen>
