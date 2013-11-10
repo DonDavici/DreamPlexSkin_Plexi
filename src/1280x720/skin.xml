@@ -1,11 +1,13 @@
-<skinss>
+<skin>
 	<!--DPS_MainMenu -->
 	   <screen name="DPS_MainMenu" position="0,0" size="1280,720" title=" " backgroundColor="#ffffffff" flags="wfNoBorder">
 		<eLabel text="DreamPlex" position="40,532" size="1273,296" font="Saint; 150" backgroundColor="#ccffffff" transparent="1" foregroundColor="#ccffffff" valign="top" zPosition="-50" />					
 		<eLabel backgroundColor="#40000000" position="265,410" zPosition="-1" size="340,70"  transparent="0" />
 		<widget source="menu" render="Listbox" position="636,60" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
           <convert type="TemplatedMultiContent">
-        {"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ], "fonts": [gFont("Saint", 30)], "itemHeight": 60 }
+          {"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ], 
+		  "fonts": [gFont("Saint", 30)], 
+		  "itemHeight": 60 }
           </convert>
         </widget> 	    	    			
 		<widget source="global.CurrentTime" render="Label" position="450,401" size="169,80" font="Saint; 60" halign="left" backgroundColor="#40000000" transparent="1" valign="top">
@@ -23,7 +25,11 @@
             <convert type="MenuEntryCompare">serverEntry</convert>
             <convert type="ConditionalShowHide" />
         </widget>
-        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_info.png" position="310,85" size="256,256" alphatest="blend" >
+        <widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_system.png" position="310,85" size="256,256" alphatest="blend" >
+            <convert type="MenuEntryCompare">settingsEntry</convert>
+            <convert type="ConditionalShowHide" />
+        </widget>
+		<widget source="menu" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_info.png" position="310,85" size="256,256" alphatest="blend" >
             <convert type="MenuEntryCompare">aboutEntry</convert>
             <convert type="ConditionalShowHide" />
         </widget>
@@ -39,35 +45,30 @@
             <convert type="MenuEntryCompare">showEntry</convert>
             <convert type="ConditionalShowHide" />
         </widget>
-
-		<eLabel backgroundColor="#40000000" position="645,51" size="412,565"  zPosition="-11"  transparent="0"/>
-		
+        <eLabel backgroundColor="#40000000" position="645,51" size="412,565"  zPosition="-11"  transparent="0"/>		
        </screen>
 	   <!-- DPS_Settings -->
 	   <screen name="DPS_Settings" position="0,0" size="1280,720" title=" " backgroundColor="#ffffffff" flags="wfNoBorder">
 		 <eLabel text="Einstellungen" transparent="1" zPosition="4" valign="center" position="72,50" size="290,60" font="Saint; 40" backgroundColor="#40000000" halign="left" />
-	     <eLabel text="Skin@IPMAN" transparent="1" zPosition="4" valign="center" position="965,342" size="290,60" font="Saint; 40" backgroundColor="#40000000" halign="left" />
 	   <!-- visu -->
 		 <widget name="config" zPosition="3" position="72,146" size="830,346" transparent="1" itemHeight="38" scrollbarMode="showOnDemand" foregroundColor="#00bbbbbb" />
 		 <widget source="help" render="Label" position="72,500" size="830,100" font="Regular; 20" zPosition="30" />
-		 <ePixmap position="947,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/setup.png" transparent="1" alphatest="blend" />
-		 <widget source="global.CurrentTime" render="Label" position="776,41" size="169,80" zPosition="10" font="Saint; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
+		 <ePixmap position="947,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_system.png" transparent="1" alphatest="blend" />
+		 <widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
            <convert type="ClockToText">Default</convert>
          </widget>
-        <widget source="global.CurrentTime" render="Label" position="616,87" size="148,29" zPosition="10" font="Regular; 18" halign="right" backgroundColor="metrixBackground" transparent="1">
-          <convert type="ClockToText">Format:%e. %B</convert>
-        </widget>
-        <widget source="global.CurrentTime" render="Label" position="639,56" size="125,30" zPosition="10" font="Regular; 18" halign="right" backgroundColor="metrixBackground" transparent="1">
-          <convert type="ClockToText">Format:%A</convert>
-        </widget>
+         <widget source="global.CurrentTime" render="Label" position="1092,380" size="148,29" font="Saint; 20" halign="left" backgroundColor="#40000000" foregroundColor="#00bbbbbb" transparent="1">
+           <convert type="ClockToText">Format:%e. %B</convert>
+         </widget>
+         <widget source="global.CurrentTime" render="Label" position="1097,349" size="125,30" font="Saint; 20" halign="left" backgroundColor="#40000000" foregroundColor="#00bbbbbb" transparent="1">
+           <convert type="ClockToText">Format:%A</convert>
+         </widget>
 		<eLabel backgroundColor="#40000000" position="58,51" zPosition="-11" size="861,595"  transparent="0"/>
 		<eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000"	position="940,423" zPosition="-1" size="280,223"  transparent="0" />	
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="994,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1003,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<!-- buttons -->
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
+	<!-- buttons -->
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/buttons/red-fs8.png" zPosition="6" position="645,605" size="30,40" alphatest="blend" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/buttons/green-fs8.png" zPosition="6" position="220,605" size="30,40" alphatest="blend" />
 		<widget source="key_red" render="Label" position="685,608" zPosition="9" size="231,37" font="Saint;20" halign="left" valign="center" foregroundColor="#00bbbbbb" backgroundColor="#40000000" transparent="1" />
@@ -80,7 +81,7 @@
 		<!-- visu -->
         <eLabel backgroundColor="#40000000" position="58,51" zPosition="-11" size="861,595"  transparent="0"/>
 		<widget name="about" zPosition="3" position="72,130" size="830,440" transparent="1" font="Regular;22" foregroundColor="#00bbbbbb" backgroundColor="#40000000" />
-        <ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/info.png" transparent="1" alphatest="blend" />
+        <ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_info.png" transparent="1" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
           <convert type="ClockToText">Default</convert>
         </widget>
@@ -93,9 +94,7 @@
 		<eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000"	position="940,423" zPosition="-1" size="280,223"  transparent="0" />	
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
 		<!-- buttons -->
         <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/buttons/red-fs8.png" zPosition="6" position="220,605" size="30,40" alphatest="blend" />
         <widget source="key_red" render="Label" position="140,608" zPosition="9" size="231,37" font="Saint;20" halign="left" valign="center" foregroundColor="#00bbbbbb" backgroundColor="#40000000" transparent="1" />
@@ -106,7 +105,7 @@
 		 <eLabel text="DreamPlex" position="40,532" size="1273,296" font="Saint; 150" backgroundColor="#ccffffff" transparent="1" foregroundColor="#ccffffff" valign="top" zPosition="-50" />
          <eLabel backgroundColor="#40000000" position="58,51" zPosition="-11" size="861,595"  transparent="0" />
 		 <widget name="help" zPosition="3" position="72,155" size="830,400" transparent="1" font="Regular;22" foregroundColor="#00bbbbbb" backgroundColor="#40000000" />
-         <ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/info.png" transparent="1" alphatest="blend" />
+         <ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_info.png" transparent="1" alphatest="blend" />
 		 <eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		 <widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
            <convert type="ClockToText">Default</convert>
@@ -119,9 +118,7 @@
          </widget>
          <eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		 <eLabel backgroundColor="#40000000" position="940,423" zPosition="-1" size="280,223"  transparent="0" />	
-		 <ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		 <eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		 <eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
+		 <ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
 		<!-- buttons -->
          <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/buttons/red-fs8.png" zPosition="6" position="220,605" size="30,40" alphatest="blend" />
          <widget source="key_red" render="Label" position="140,608" zPosition="9" size="231,37" font="Saint;20" halign="left" valign="center" foregroundColor="#00bbbbbb" backgroundColor="#40000000" transparent="1" />
@@ -134,7 +131,7 @@
 		<eLabel backgroundColor="#40000000" position="58,51" zPosition="-11" size="861,595"  transparent="0" />
 		<!-- content -->
 		<widget name="content" zPosition="3" position="72,116" size="830,495" transparent="1" itemHeight="35" scrollbarMode="showNever" foregroundColor="#00bbbbbb" foregroundColorSelected="#ffffff" />
-		<ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/setup.png" transparent="1" alphatest="blend" />
+		<ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_system.png" transparent="1" alphatest="blend" />
 		<eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		<widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
            <convert type="ClockToText">Default</convert>
@@ -147,9 +144,7 @@
         </widget>
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,423" zPosition="-1" size="280,223"  transparent="0" />
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
 		<!-- buttons -->
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/buttons/red-fs8.png" zPosition="6" position="220,605" size="30,40" alphatest="blend" />
 		<!-- functions -->
@@ -175,9 +170,7 @@
         </widget>
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,423" zPosition="-1" size="280,223"  transparent="0" />
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
 		<!-- buttons -->
 		<!-- content -->
 		<widget name="state" position="255,410" zPosition="2" size="200,50" font="Regular; 28" halign="left"/>
@@ -205,9 +198,7 @@
 		<eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,423" zPosition="-1" size="280,223"  transparent="0" />
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
 		<!-- content -->
 		<widget name="config" zPosition="3" position="72,110" size="830,386" transparent="1" itemHeight="35" scrollbarMode="showNever" foregroundColor="#00bbbbbb" />
 		<widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
@@ -235,13 +226,11 @@
 		<eLabel text="DreamPlex" position="40,532" size="1273,296" font="Saint; 150" backgroundColor="#ccffffff" transparent="1" foregroundColor="#ccffffff" valign="top" zPosition="-50" />
 		<!-- visu -->
 		<eLabel backgroundColor="#40000000" position="58,51" zPosition="-11" size="861,595"  transparent="0" />
-		<ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/setup.png" transparent="1" alphatest="blend" />
+		<ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_system.png" transparent="1" alphatest="blend" />
 		<eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,423" zPosition="-1" size="280,223"  transparent="0" />
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
         <!-- content -->
         <widget name="content" zPosition="3" position="72,110" size="830,386" transparent="1" itemHeight="35" scrollbarMode="showNever" foregroundColor="#00bbbbbb" />
         <widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
@@ -266,15 +255,12 @@
 		<eLabel text="DreamPlex" position="40,532" size="1273,296" font="Saint; 150" backgroundColor="#ccffffff" transparent="1" foregroundColor="#ccffffff" valign="top" zPosition="-50" />
 		<!-- visu -->
 		<eLabel backgroundColor="#40000000" position="58,51" zPosition="-11" size="861,595"  transparent="0" />
-		<ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/setup.png" transparent="1" alphatest="blend" />
+		<ePixmap position="952,59" size="256,256" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/menu_system.png" transparent="1" alphatest="blend" />
 		<eLabel backgroundColor="#40000000" position="940,51" zPosition="-1" size="280,270"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,339" zPosition="-1" size="280,70"  transparent="0" />
 		<eLabel backgroundColor="#40000000" position="940,423" zPosition="-1" size="280,223"  transparent="0" />
-		<ePixmap position="985,443" size="200,100" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
-		<eLabel text="Developer" position="999,538" size="270,80" font="Saint; 40" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-		<eLabel text="DonDavici" position="1008,573" size="270,80" font="Saint; 35" backgroundColor="#40000000" transparent="1" valign="top" halign="left" />
-        
-		<widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
+		<ePixmap position="972,423" size="225,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/dreamplex-fs8.png" transparent="1" alphatest="blend" />
+        <widget source="global.CurrentTime" render="Label" position="914,334" size="169,80" font="Saint; 60" halign="right" backgroundColor="#40000000" transparent="1" valign="top">
            <convert type="ClockToText">Default</convert>
         </widget>
         <widget source="global.CurrentTime" render="Label" position="1092,380" size="148,29" font="Saint; 20" halign="left" backgroundColor="#40000000" foregroundColor="#00bbbbbb" transparent="1">
@@ -383,7 +369,7 @@
 	<screen name="DPS_ViewMovie" position="0,0" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="#ffffffff">
 	    <eLabel backgroundColor="#40000000" position="0,0" zPosition="-1" size="1280,720" transparent="0" />
 		<widget source="Title" render="Label" transparent="1" zPosition="4" valign="center" position="230,5" size="490,90" font="Saint;60" foregroundColor="#FF8C00" backgroundColor="#40000000" halign="left" />		
-    	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/info.png" zPosition="50" position="560,654"  size="81,40" alphatest="blend" transparent="0" />
+    	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/menu_info.png" zPosition="50" position="560,654"  size="81,40" alphatest="blend" transparent="0" />
 		<widget source="listview" render="Listbox" zPosition="8" position="35,87" size="580,565" scrollbarMode="showNever" foregroundColor="#00bbbbbb" backgroundColor="#40000000" transparent="1" > 
           <convert type="TemplatedMultiContent">
                 {"template": [ MultiContentEntryText(pos = (40,1), size = (580,36), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -691,4 +677,4 @@
         
     </screen>	
     
-</skinss>
+</skin>
