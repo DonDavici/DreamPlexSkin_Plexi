@@ -336,7 +336,6 @@
 		<widget name="poster" transparent="1" zPosition="-49" position="687,379" size="195,268" alphatest="blend" />
         <widget name="postertext" transparent="1" zPosition="-88" halign="left" position="716,502" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#000000"/>
 		<widget name="subtitles" transparent="1" zPosition="-90" halign="left"  position="687,379" size="200,25" font="Saint; 22" backgroundColor="#40000000"/>
-		<widget name="selectedAudio" transparent="1" zPosition="-90" halign="left" position="687,400" size="200,25" font="Saint; 22"  backgroundColor="#40000000"/>
 		
 		<widget name="backdrop" transparent="0" zPosition="45" position="620,90" size="600,337" alphatest="blend" />
 		<widget name="backdroptext" transparent="1" zPosition="4" halign="left" position="700,500" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#40000000"/>
@@ -426,7 +425,6 @@
 		<widget name="poster" transparent="1" zPosition="-49" position="687,379" size="195,268" alphatest="blend" />
         <widget name="postertext" transparent="1" zPosition="-88" halign="left" position="716,502" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#000000"/>
 		<widget name="subtitles" transparent="1" zPosition="-90" halign="left"  position="687,379" size="200,25" font="Saint; 22" backgroundColor="#40000000"/>
-		<widget name="selectedAudio" transparent="1" zPosition="-90" halign="left" position="687,400" size="200,25" font="Saint; 22"  backgroundColor="#40000000"/>
 		
 		<widget name="backdrop" transparent="0" zPosition="45" position="670,377" size="560,315" alphatest="blend" />
 		<widget name="backdroptext" transparent="1" zPosition="4" halign="left" position="700,500" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#40000000"/>
