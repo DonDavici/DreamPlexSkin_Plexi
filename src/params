@@ -21,31 +21,31 @@
 	<guiElement name="key_nine" path="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/key_9.png" />
 
 	<!-- MOVIE VIEWS -->
-	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList" backdropVideos="False" >
+	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList">
 	<element name="tag" visible="False" />
 	</movieView>
 	
-	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False" >
+	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong">
 		<element name="backdrop" visible="False"/>
 	</movieView>
 	
-	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" backdropVideos="True" >
-	    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
+	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" >
+	    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>	
 	</movieView>
 	
 	<!-- SHOW VIEWS
 		IMPORTANT if something is visible in the screen before dont add it again with visible
 		only change things from one screen to the other what really changed their visibilty or position
 	-->
-	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False" >
+	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong">
 		<subView name="ShowSeasons">
 			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
 			<element name="genre" visible="False" />
 		    <element name="year" visible="False" />
-			<element name="title" xCoord="515" yCoord="192" />
-		    <element name="poster" xCoord="505" yCoord="237" />
+			<element name="title" xCoord="515" yCoord="282" />
+		    <element name="poster" xCoord="505" yCoord="327" />
 		    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
-			<element name="shortDescription" xCoord="735" yCoord="227" />
+			<element name="shortDescription" xCoord="735" yCoord="317" />
 		    <element name="runtime" visible="False" />
 		    <element name="rated" visible="False" />
 		    <element name="total" visible="False" />
@@ -56,20 +56,20 @@
 		    <element name="genre" visible="True" xCoord="585" yCoord="295" />
 		    <element name="title" xCoord="515" yCoord="190" />
 			<element name="year" visible="True" />
-		    <element name="runtime" visible="True" xCoord="940" yCoord="235" />
+		    <element name="runtime" visible="True" xCoord="740" yCoord="235" />
 		    <element name="rated" visible="True" />
 		    <element name="backdrop" visible="False" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
-		    <element name="poster" xCoord="505" yCoord="291" />
-		    <element name="shortDescription" xCoord="735" yCoord="282" />
+		    <element name="poster" xCoord="505" yCoord="282" />
+		    <element name="shortDescription" xCoord="735" yCoord="274" />
 		    <element name="total" visible="True" />
 		</subView>
 	</showView>
 
-	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False" backdropVideos="False" >
+	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False">
 		<element name="backdrop" visible="False"/>
 	</showView>
 
-	<showView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" showBackdrop="False" backdropVideos="True" >
+	<showView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" showBackdrop="False" >
 	</showView>
 	
 </xml>
