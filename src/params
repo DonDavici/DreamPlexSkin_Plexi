@@ -21,15 +21,15 @@
 	<guiElement name="key_nine" path="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/key_9.png" />
 
 	<!-- MOVIE VIEWS -->
-	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList">
+	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList" backdropVideos="False">
 	<element name="tag" visible="False" />
 	</movieView>
 	
-	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong">
+	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
 		<element name="backdrop" visible="False"/>
 	</movieView>
 	
-	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" >
+	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" backdropVideos="True">
 	    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>	
 	</movieView>
 	
@@ -37,7 +37,7 @@
 		IMPORTANT if something is visible in the screen before dont add it again with visible
 		only change things from one screen to the other what really changed their visibilty or position
 	-->
-	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong">
+	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
 		<subView name="ShowSeasons">
 			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
 			<element name="genre" visible="False" />
@@ -65,11 +65,11 @@
 		</subView>
 	</showView>
 
-	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False">
+	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False" backdropVideos="False">
 		<element name="backdrop" visible="False"/>
 	</showView>
 
-	<showView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" showBackdrop="False" >
+	<showView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" showBackdrop="False" backdropVideos="False">
 	</showView>
 	
 </xml>
