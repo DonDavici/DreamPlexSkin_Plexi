@@ -326,7 +326,7 @@
 		<widget name="genreLabel" transparent="1" zPosition="4" halign="left" position="920,60" size="120,30" font="Regular; 22" backgroundColor="#40000000"/>
 		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="left" position="620,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
 		<widget name="yearLabel" transparent="1" zPosition="4" halign="left" position="805,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
-        <widget name="subtitlesLabel" transparent="1" zPosition="4" halign="left" position="805,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
+        <widget name="subtitlesLabel" transparent="1" zPosition="-99" halign="left" position="805,60" size="160,30" font="Regular; 22"  backgroundColor="#40000000"/>
 
         <widget name="genre" transparent="1" zPosition="4" halign="left" valign="top"  position="994,60" size="250,30" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
 		<widget name="runtime" transparent="1" zPosition="4" halign="left" valign="top" position="718,60" size="160,30" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
@@ -363,100 +363,11 @@
 		<widget name="txt_pvr" transparent="1" zPosition="50" halign="left" valign="top" position="850,594" size="300,25" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
         <widget name="btn_pvr" alphatest="blend" zPosition="50" position="775,597" size="70,30" backgroundColor="#40000000"/>
     </screen>
-    
-<!-- DPS_ViewMovie -->
-	<screen name="DPS_ViewMovie" position="0,0" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="#ffffffff">
-	    <eLabel backgroundColor="#40000000" position="0,0" zPosition="-1" size="1280,720" transparent="0" />
-		<widget source="Title" render="Label" transparent="1" zPosition="4" valign="center" position="230,5" size="490,90" font="Saint;60" foregroundColor="#FF8C00" backgroundColor="#40000000" halign="left" />		
-    	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/all/menu_info.png" zPosition="50" position="560,654"  size="81,40" alphatest="blend" transparent="0" />
-		<widget source="listview" render="Listbox" zPosition="8" position="35,87" size="580,565" scrollbarMode="showNever" foregroundColor="#00bbbbbb" backgroundColor="#40000000" transparent="1" > 
-          <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (40,1), size = (580,36), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-                MultiContentEntryPixmapAlphaTest(pos = (10,8), size = (24,24), png = 4) ],
-                "fonts": [gFont("Saint", 27)],
-                "itemHeight": 40,
-                "scrollbarMode": "showNever"
-                }
-          </convert>
-        </widget>
-    	<widget source="global.CurrentTime" render="Label" position="1095,10" size="169,80" font="Saint; 60" halign="left" backgroundColor="#40000000" transparent="1" valign="top">
-          <convert type="ClockToText">Default</convert>
-        </widget>
-        <widget source="global.CurrentTime" render="Label" position="935,52" size="148,29" font="Saint; 20" halign="right" backgroundColor="#40000000" foregroundColor="#00bbbbbb" transparent="1">
-          <convert type="ClockToText">Format:%e. %B</convert>
-        </widget>
-        <widget source="global.CurrentTime" render="Label" position="957,24" size="125,30" font="Saint; 20" halign="right" backgroundColor="#40000000" transparent="1">
-          <convert type="ClockToText">Format:%A</convert>
-        </widget>
-        
-		<widget name="tag" transparent="1" zPosition="48" halign="left" noWrap="1" position="670,81" size="680,24" font="Saint;18" foregroundColor="#00bbbbbb" backgroundColor="#40000000"/>
-		
-		<widget name="rated" position="670,302" size="284,65" transparent="1" alphatest="blend" zPosition="51" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/rated-pg13-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/rated-pg-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/rated-r-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/rated-nc-17-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/rated-g-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/rated-not-fs8.png" />
-        
-        <widget name="sound" position="786,658" size="80,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-dts-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-ac3-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-stereo-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-mp3-fs8.png" />
-        
-        <widget name="resolution" position="674,658" size="102,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-1080-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-720-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-sd-fs8.png" />
-        
-        <widget name="aspect" position="1046,654" size="64,48" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-4_3-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-16_9-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-2.35-fs8.png" />
-        
-        <widget name="codec"  position="1123,654" size="100,48" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-vc1-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-h.264-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-mpeg4-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-mpeg2-fs8.png" />
-        		
-        <widget name="rating_stars" zPosition="84" position="889,661" size="141,29" transparent="1" orientation="orHorizontal" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_bright-fs8.png" />
-		
-		<widget name="shortDescription" text="" transparent="1" zPosition="14" halign="left" position="670,140" size="605,185" font="Saint; 23" foregroundColor="#ffffff" backgroundColor="#40000000" />
-		
-		<eLabel backgroundColor="#00bbbbbb" text="" zPosition="13" halign="left" position="45,79" size="1190,1" />
-		<eLabel backgroundColor="#00bbbbbb" text="" zPosition="14" halign="left" position="640,79" size="1,576" />
-		<eLabel text="" zPosition="14" halign="left" position="35,654" size="580,1" backgroundColor="#00bbbbbb"/>
-		<widget name="current" transparent="1" zPosition="5" halign="left" valign="center" position="370,648" size="190,50" font="Saint;26" foregroundColor="#FF8C00"  backgroundColor="#40000000" />
-		<widget name="total" transparent="1" zPosition="4" valign="center" halign="left" position="45,648" size="190,50" font="Saint;26" foregroundColor="#FF8C00"  backgroundColor="#40000000" />		
-		
-		<widget name="title" transparent="1" zPosition="5" halign="left" position="670,101" size="680,46" font="Saint;30" foregroundColor="#FF8C00"  backgroundColor="#40000000" />
-							
-		<widget name="genreLabel" transparent="1" zPosition="4" halign="left" position="967,302" size="120,30" font="Saint; 22" foregroundColor="#FF8C00"  backgroundColor="#40000000"/>
-		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="left" position="962,339" size="160,30" font="Saint; 22" foregroundColor="#FF8C00"  backgroundColor="#40000000"/>
-		<widget name="yearLabel" transparent="1" zPosition="4" halign="left" position="1130,339" size="160,30" font="Saint; 22" foregroundColor="#FF8C00"  backgroundColor="#40000000"/>
-
-		<widget name="genre" transparent="1" zPosition="4" halign="left" valign="top"  position="1041,302" size="200,30" font="Saint; 22" foregroundColor="#ffffff" backgroundColor="#40000000"/>
-		<widget name="runtime" transparent="1" zPosition="4" halign="left" valign="top" position="1057,339" size="160,30" font="Saint; 22" foregroundColor="#ffffff" backgroundColor="#40000000"/>
-		<widget name="year" transparent="1" zPosition="4" halign="left" valign="top" position="1185,339" size="160,30" font="Saint; 22" foregroundColor="#ffffff" backgroundColor="#40000000"/>
-		<eLabel backgroundColor="#40000000"	position="670,652" zPosition="46" size="560,40"  transparent="0" />			
-		
-		<widget name="poster" transparent="1" zPosition="-49" position="687,379" size="195,268" alphatest="blend" />
-        <widget name="postertext" transparent="1" zPosition="-88" halign="left" position="716,502" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#000000"/>
-		<widget name="subtitles" transparent="1" zPosition="-90" halign="left"  position="687,379" size="200,25" font="Saint; 22" backgroundColor="#40000000"/>
-		
-		<widget name="backdrop" transparent="0" zPosition="45" position="670,377" size="560,315" alphatest="blend" />
-		<widget name="backdroptext" transparent="1" zPosition="4" halign="left" position="700,500" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#40000000"/>
-		
-		<widget name="functionsContainer" transparent="0" zPosition="46" position="670,377" size="560,315" backgroundColor="#40000000" />
-		<widget name="number_key_popup" zPosition="51" halign="left" valign="center" position="436,520" size="75,80" font="Saint;70" foregroundColor="#FF8C00" backgroundColor="#40000000" />
-		
-		<widget name="txt_red" transparent="1" zPosition="50" halign="left" valign="top" position="850,394" size="400,32" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
-		<widget name="btn_red" transparent="0" zPosition="50" position="785,390" size="32,32"/>
-		
-		<widget name="txt_blue" transparent="1" zPosition="50" halign="left" valign="top" position="850,434" size="400,32" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
-		<widget name="btn_blue" transparent="0" zPosition="50" position="785,430" size="32,32"/>
-		
-		<widget name="txt_yellow" transparent="1" zPosition="50" halign="left" valign="top" position="850,474" size="400,32" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
-		<widget name="btn_yellow" transparent="0" zPosition="50" position="785,470" size="32,32"/>
-		
-		<widget name="txt_filter" transparent="1" zPosition="50" halign="left" valign="top" position="850,514" size="400,32" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
-		
-		<widget name="btn_zero" alphatest="blend" zPosition="50" position="772,517" size="35,25" backgroundColor="#40000000"/>
-		<widget name="btn_nine" alphatest="blend" zPosition="50" position="805,517" size="35,25" backgroundColor="#40000000"/>
-		
-		<widget name="txt_menu" transparent="1" zPosition="50" halign="left" valign="top" position="850,554" size="300,25" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
-        <widget name="btn_menu" alphatest="blend" zPosition="50" position="775,557" size="70,30" backgroundColor="#40000000"/>
-		
-		<widget name="txt_pvr" transparent="1" zPosition="50" halign="left" valign="top" position="850,594" size="300,25" font="Saint; 20" foregroundColor="#00bbbbbb"  backgroundColor="#40000000"/>
-        <widget name="btn_pvr" alphatest="blend" zPosition="50" position="775,597" size="70,30" backgroundColor="#40000000"/>
-    </screen>
 	<!-- DPS_ViewListLong -->
 	<screen name="DPS_ViewListLong" position="0,0" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="#ffffffff">
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/backlist.png" position="0,0" zPosition="-2" size="1280,720" alphatest="blend" transparent="0"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/1280x720/images/back.png" position="0,85" zPosition="-1" size="1280,635" transparent="1" alphatest="blend" />
-        <widget source="listview" render="Listbox" zPosition="8" position="35,200" size="472,445" scrollbarMode="showOnDemand" foregroundColor="#00bbbbbb" backgroundColor="#40000000"  transparent="1" > 
+        <widget source="listview" render="Listbox" zPosition="8" position="35,200" size="472,445" scrollbarMode="showOnDemand" backgroundColor="#40000000"  transparent="1" > 
           <convert type="TemplatedMultiContent">
                 {"template": [ MultiContentEntryText(pos = (40,1), size = (472,36), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
                 MultiContentEntryPixmapAlphaTest(pos = (10,9), size = (24,24), png = 4) ],
@@ -476,28 +387,28 @@
         <widget source="global.CurrentTime" render="Label" position="949,97" size="125,30" zPosition="10" font="Regular; 18" halign="right" backgroundColor="#40000000" transparent="1">
           <convert type="ClockToText">Format:%A</convert>
         </widget>
-		<widget name="title" transparent="1" zPosition="5" halign="left" position="515,185" size="740,42" font="Saint;32" foregroundColor="#FF8C00" backgroundColor="#40000000" />
-		<widget name="shortDescription" text="" transparent="1" zPosition="14" halign="block" position="735,278" size="524,325" font="Saint; 24" backgroundColor="#40000000" />
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_back-fs8.png" zPosition="83" position="520,237" size="190,35" alphatest="blend" transparent="1" />                              
-        <widget name="rating_stars" zPosition="84" position="520,237" size="180,35" transparent="1" orientation="orHorizontal" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_bright2-fs8.png" />
-        <widget name="resolution" position="730,640" size="102,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-1080-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-720-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-sd-fs8.png" />
-        <widget name="sound" position="885,642" size="80,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-dts-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-ac3-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-stereo-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-mp3-fs8.png" />
-		<widget name="aspect" position="1010,640" size="64,48" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-4_3-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-16_9-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-2.35-fs8.png" />
-		<widget name="codec"  position="1130,640" size="100,48" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-vc1-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-h.264-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-mpeg4-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-mpeg2-fs8.png" />
+		<widget name="title" transparent="1" zPosition="5" halign="left" position="515,190" size="740,42" font="Saint;32" foregroundColor="#FF8C00" backgroundColor="#40000000" />
+		<widget name="shortDescription" text="" transparent="1" zPosition="14" halign="block" position="735,273" size="524,325" font="Saint; 24" backgroundColor="#40000000" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_back-fs8.png" zPosition="83" position="525,593" size="190,35" alphatest="blend" transparent="1" />                              
+        <widget name="rating_stars" zPosition="84" position="525,593" size="180,35" transparent="1" orientation="orHorizontal" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_bright2-fs8.png" />
+        <widget name="resolution" position="730,648" size="102,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-1080-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-720-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-sd-fs8.png" />
+        <widget name="sound" position="885,650" size="80,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-dts-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-ac3-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-stereo-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/audio-mp3-fs8.png" />
+		<widget name="aspect" position="1010,648" size="64,48" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-4_3-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-16_9-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/aspect-2.35-fs8.png" />
+		<widget name="codec"  position="1130,648" size="100,48" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-vc1-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-h.264-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-mpeg4-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/codec-mpeg2-fs8.png" />
 		
-		<widget name="rated" position="592,630" size="60,55" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-12-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-6-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-16-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-18-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-0-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-not-fs8.png" />
+		<widget name="rated" position="592,639" size="60,55" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-12-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-6-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-16-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-18-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-0-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/fsk-not-fs8.png" />
 				
 		<widget name="current" transparent="1" zPosition="5" halign="left" valign="center" position="350,651" size="190,50" font="Regular;24" backgroundColor="#40000000" />
 		<widget name="total" transparent="1" zPosition="4" valign="center" halign="left" position="45,651" size="190,50" font="Regular;24" backgroundColor="#40000000" />	
                    
-        <widget name="genreLabel" transparent="1" zPosition="4" halign="right" valign="center" position="797,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
-        <widget name="genre" transparent="1" zPosition="4" halign="left" valign="center"  position="922,235" size="320,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
+        <widget name="genreLabel" transparent="1" zPosition="4" halign="right" valign="center" position="597,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
+        <widget name="genre" transparent="1" zPosition="4" halign="left" valign="center"  position="722,235" size="320,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
 		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="right" valign="center" position="510,800" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
         <widget name="runtime" transparent="1" zPosition="4" halign="left" valign="center" position="632,800" size="160,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
-		<widget name="yearLabel" transparent="1" zPosition="4" halign="right" valign="center" position="650,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
-        <widget name="year" transparent="1" zPosition="4" halign="left" valign="center" position="775,235" size="160,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
+		<widget name="yearLabel" transparent="1" zPosition="4" halign="right" valign="center" position="450,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
+        <widget name="year" transparent="1" zPosition="4" halign="left" valign="center" position="575,235" size="160,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
         		       
-		<widget name="poster" transparent="1" zPosition="89" position="510,290" size="220,303" alphatest="blend" />
+		<widget name="poster" transparent="1" zPosition="89" position="510,284" size="220,303" alphatest="blend" />
         <widget name="postertext" transparent="1" zPosition="4" halign="left" position="150,500" size="200,40" font="Regular;22" backgroundColor="#000000"/>
         
         <widget name="backdrop" transparent="0" zPosition="-2" position="0,0" size="1280,720" alphatest="blend" />
