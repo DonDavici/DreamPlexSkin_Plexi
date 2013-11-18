@@ -22,7 +22,8 @@
 
 	<!-- MOVIE VIEWS -->
 	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList" backdropVideos="False">
-	<element name="tag" visible="False" />
+		<element name="poster" visible="False"/>
+		<element name="tag" visible="False" />
 	</movieView>
 	
 	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
