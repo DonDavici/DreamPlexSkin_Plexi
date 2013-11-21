@@ -469,7 +469,8 @@
 		<widget name="total" transparent="1" zPosition="4" valign="center" halign="left" position="45,648" size="190,50" font="Saint;26" foregroundColor="#FF8C00"  backgroundColor="#40000000" />		
 		
 		<widget name="title" transparent="1" zPosition="5" halign="left" position="670,101" size="680,46" font="Saint;30" foregroundColor="#FF8C00"  backgroundColor="#40000000" />
-							
+	    <widget name="grandparentTitle" transparent="1" zPosition="5" halign="left" position="670,80" size="680,46" font="Saint;30" foregroundColor="#FF8C00"  backgroundColor="#40000000" />
+
 		<widget name="genreLabel" transparent="1" zPosition="4" halign="left" position="967,302" size="120,30" font="Saint; 22" foregroundColor="#FF8C00"  backgroundColor="#40000000"/>
 		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="left" position="962,339" size="160,30" font="Saint; 22" foregroundColor="#FF8C00"  backgroundColor="#40000000"/>
 		<widget name="yearLabel" transparent="1" zPosition="4" halign="left" position="1130,339" size="160,30" font="Saint; 22" foregroundColor="#FF8C00"  backgroundColor="#40000000"/>
@@ -534,7 +535,8 @@
           <convert type="ClockToText">Format:%A</convert>
         </widget>
 		<widget name="title" transparent="1" zPosition="5" halign="left" position="515,190" size="740,42" font="Saint;32" foregroundColor="#FF8C00" backgroundColor="#40000000" />
-		<widget name="shortDescription" text="" transparent="1" zPosition="14" halign="block" position="735,273" size="524,325" font="Saint; 24" backgroundColor="#40000000" />
+		<widget name="grandparentTitle" transparent="1" zPosition="5" halign="left" position="670,80" size="680,46" font="Saint;30" foregroundColor="#FF8C00"  backgroundColor="#40000000" />
+        <widget name="shortDescription" text="" transparent="1" zPosition="14" halign="block" position="735,273" size="524,325" font="Saint; 24" backgroundColor="#40000000" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_back-fs8.png" zPosition="83" position="525,593" size="190,35" alphatest="blend" transparent="1" />                              
         <widget name="rating_stars" zPosition="84" position="525,593" size="180,35" transparent="1" orientation="orHorizontal" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/five_stars_bright2-fs8.png" />
         <widget name="resolution" position="730,648" size="102,38" transparent="1" alphatest="blend" zPosition="49" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-1080-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-720-fs8.png,/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/resolution-sd-fs8.png" />

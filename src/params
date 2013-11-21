@@ -44,6 +44,7 @@
 	-->
 	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
 		<subView name="ShowSeasons">
+			<element name="grandparentTitle" xCoord="515" yCoord="252" visible="True"/>
 			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
 			<element name="genre" visible="False" />
 		    <element name="year" visible="False" />
@@ -57,6 +58,7 @@
 		</subView>
 		
 		<subView name="ShowEpisodes">
+			<element name="grandparentTitle" xCoord="515" yCoord="150"/>
 			<element name="audio" visible="False"/>
 		    <element name="genre" visible="True" xCoord="585" yCoord="295" />
 		    <element name="title" xCoord="515" yCoord="190" />
