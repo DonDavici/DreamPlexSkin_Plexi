@@ -387,6 +387,7 @@
         </widget>        
 		<widget source="Title" render="Label" transparent="1" zPosition="4" valign="center" position="320,178" size="490,90" font="Regular;35" backgroundColor="#60000000" halign="left" />	
 		<widget name="title" transparent="1" zPosition="5" halign="left" position="626,245" size="490,35" font="Regular;22" foregroundColor="#FF8C00" backgroundColor="#60000000" />
+        <widget name="grandparentTitle" transparent="1" zPosition="5" halign="left" position="626,245" size="490,35" font="Regular;22" foregroundColor="#FF8C00" backgroundColor="#60000000" />
 		<widget name="shortDescription" text="" transparent="1" zPosition="14" halign="block" position="625,466" size="515,220" font="Regular; 20" backgroundColor="#60000000" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/mini/five_stars_back-fs8.png" zPosition="83" position="626,216" size="157,29" alphatest="blend" transparent="1" />                              
         <widget name="rating_stars" zPosition="84" position="626,216" size="157,29" transparent="1" orientation="orHorizontal" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamPlex/skins/Plexi/icons/mini/five_stars_bright2-fs8.png" />
@@ -600,7 +601,8 @@
                 }
           </convert>
         </widget>        
-		<widget source="Title" render="Label" transparent="1" zPosition="4" valign="center" position="75,65" size="490,90" font="Saint;50" backgroundColor="#40000000" halign="left" />	
+		<widget source="Title" render="Label" transparent="1" zPosition="4" valign="center" position="75,65" size="490,90" font="Saint;50" backgroundColor="#40000000" halign="left" />
+        <widget source="grandparentTitle" render="Label" transparent="1" zPosition="4" valign="center" position="75,65" size="490,90" font="Saint;50" backgroundColor="#40000000" halign="left" />
 		<widget source="global.CurrentTime" render="Label" position="1086,76" size="169,80" zPosition="10" font="Saint; 60" halign="left" backgroundColor="#40000000" transparent="1" valign="top">
           <convert type="ClockToText">Default</convert>
         </widget>
