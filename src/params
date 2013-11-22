@@ -32,6 +32,7 @@
 	
 	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
 		<element name="backdrop" visible="False"/>
+	    <element name="grandparentTitle" visible="False" />
 	</movieView>
 	
 	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" backdropVideos="True">
@@ -44,11 +45,11 @@
 	-->
 	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
 		<subView name="ShowSeasons">
-			<element name="grandparentTitle" xCoord="515" yCoord="252" visible="True"/>
+			<element name="grandparentTitle" visible="True"/>
 			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
 			<element name="genre" visible="False" />
 		    <element name="year" visible="False" />
-			<element name="title" xCoord="515" yCoord="282" />
+			<element name="title" xCoord="515" yCoord="272" />
 		    <element name="poster" xCoord="505" yCoord="327" />
 		    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
 			<element name="shortDescription" xCoord="735" yCoord="317" />
@@ -58,7 +59,6 @@
 		</subView>
 		
 		<subView name="ShowEpisodes">
-			<element name="grandparentTitle" xCoord="515" yCoord="150"/>
 			<element name="audio" visible="False"/>
 		    <element name="genre" visible="True" xCoord="585" yCoord="295" />
 		    <element name="title" xCoord="515" yCoord="190" />
@@ -74,9 +74,6 @@
 
 	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False" backdropVideos="False">
 		<element name="backdrop" visible="False"/>
-	</showView>
-
-	<showView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" showBackdrop="False" backdropVideos="False">
 	</showView>
 	
 </xml>
