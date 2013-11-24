@@ -22,21 +22,20 @@
 
 	<!-- MOVIE VIEWS -->
 	<movieView name="List" apiLevel="1" itemsPerPage="14" screen="DPS_ViewList" backdropVideos="False">
-	<element name="poster" visible="False"/>
-	<element name="tag" visible="False" />
+		<main name="poster" visible="False"/>
+		<main name="tag" visible="False" />
 	</movieView>
 	
 	<movieView name="Mini" apiLevel="1" itemsPerPage="10" screen="DPS_ViewMini" backdropVideos="False">
-		<element name="backdrop" visible="True"/>
+
 	</movieView>
 	
 	<movieView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
-		<element name="backdrop" visible="False"/>
-	    <element name="grandparentTitle" visible="False" />
+		<main name="backdrop" visible="False"/>
 	</movieView>
 	
 	<movieView name="Backdrop" apiLevel="1" itemsPerPage="13" screen="DPS_ViewBackdrop" backdropVideos="True">
-	    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>	
+		<main name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
 	</movieView>
 	
 	<!-- SHOW VIEWS
@@ -44,18 +43,15 @@
 		only change things from one screen to the other what really changed their visibilty or position
 	-->		
 	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
-		    <element name="backdrop" visible="False"/>
+		<main name="backdrop" visible="False"/>
 		    
 		<subView name="ShowSeasons">
 			<element name="grandparentTitle" visible="True"/>
-			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
 			<element name="genre" visible="False" />
-		    <element name="year" visible="False" />
 			<element name="title" xCoord="515" yCoord="272" />
 		    <element name="poster" xCoord="505" yCoord="327" />
 		    <element name="backdrop" visible="True" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
 			<element name="shortDescription" xCoord="735" yCoord="317" />
-		    <element name="runtime" visible="False" />
 		    <element name="rated" visible="False" />
 		    <element name="total" visible="False" />
 		</subView>
@@ -65,9 +61,9 @@
 		    <element name="genre" visible="True" xCoord="585" yCoord="295" />
 		    <element name="title" xCoord="515" yCoord="190" />
 			<element name="year" visible="True" />
-		    <element name="runtime" visible="True" xCoord="740" yCoord="235" />
+		    <element name="runtime" visible="True"/>
 		    <element name="rated" visible="True" />
-		    <element name="backdrop" visible="False" height="720" width="1280" postfix="_backdrop_1280x720.jpg"/>
+		    <element name="backdrop" visible="False"/>
 		    <element name="poster" xCoord="505" yCoord="282" />
 		    <element name="shortDescription" xCoord="735" yCoord="274" />
 		    <element name="total" visible="True" />
