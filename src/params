@@ -42,8 +42,10 @@
 	<!-- SHOW VIEWS
 		IMPORTANT if something is visible in the screen before dont add it again with visible
 		only change things from one screen to the other what really changed their visibilty or position
-	-->
+	-->		
 	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
+		    <element name="backdrop" visible="False"/>
+		    
 		<subView name="ShowSeasons">
 			<element name="grandparentTitle" visible="True"/>
 			<element name="audio" visible="False" xCoord="300" yCoord="300"/>
@@ -70,10 +72,6 @@
 		    <element name="shortDescription" xCoord="735" yCoord="274" />
 		    <element name="total" visible="True" />
 		</subView>
-	</showView>
-
-	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" showBackdrop="False" backdropVideos="False">
-		<element name="backdrop" visible="False"/>
 	</showView>
 	
 </xml>

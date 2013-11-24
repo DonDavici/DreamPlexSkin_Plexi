@@ -459,10 +459,10 @@
 		<widget name="current" transparent="1" zPosition="5" halign="left" valign="center" position="350,651" size="190,50" font="Regular;24" backgroundColor="#40000000" />
 		<widget name="total" transparent="1" zPosition="4" valign="center" halign="left" position="45,651" size="190,50" font="Regular;24" backgroundColor="#40000000" />	
                    
-        <widget name="genreLabel" transparent="1" zPosition="4" halign="right" valign="center" position="597,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
-        <widget name="genre" transparent="1" zPosition="4" halign="left" valign="center"  position="722,235" size="320,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
-		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="right" valign="center" position="510,800" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
-        <widget name="runtime" transparent="1" zPosition="4" halign="left" valign="center" position="632,800" size="160,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
+        <widget name="genreLabel" transparent="1" zPosition="4" halign="right" valign="center" position="772,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
+        <widget name="genre" transparent="1" zPosition="4" halign="left" valign="center"  position="897,235" size="320,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
+		<widget name="runtimeLabel" transparent="1" zPosition="4" halign="right" valign="center" position="613,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
+        <widget name="runtime" transparent="1" zPosition="4" halign="left" valign="center" position="735,235" size="160,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
 		<widget name="yearLabel" transparent="1" zPosition="4" halign="right" valign="center" position="450,235" size="120,38" font="Regular; 22" backgroundColor="#40000000"/>
         <widget name="year" transparent="1" zPosition="4" halign="left" valign="center" position="575,235" size="160,38" font="Regular; 22" foregroundColor="#FF8C00" backgroundColor="#40000000"/>
         		       
