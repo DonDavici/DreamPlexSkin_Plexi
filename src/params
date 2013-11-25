@@ -44,7 +44,9 @@
 	-->		
 	<showView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
 		<main name="backdrop" visible="False"/>
-		    
+		<main name="year" visible="True"/>    
+		<main name="genre" xCoord="585" yCoord="295" /> 
+		
 		<subView name="ShowSeasons">
 			<element name="grandparentTitle" visible="True"/>
 			<element name="genre" visible="False" />
@@ -54,6 +56,7 @@
 			<element name="shortDescription" xCoord="735" yCoord="317" />
 		    <element name="rated" visible="False" />
 		    <element name="total" visible="False" />
+		    <element name="year" visible="False" />
 		</subView>
 		
 		<subView name="ShowEpisodes">
