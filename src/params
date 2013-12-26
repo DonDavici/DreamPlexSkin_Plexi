@@ -72,5 +72,9 @@
 		    <element name="total" visible="True" />
 		</subView>
 	</showView>
-	
+
+	<!-- EPISODE VIEWS -->
+	<episodeView name="long List" apiLevel="1" itemsPerPage="11" screen="DPS_ViewListLong" backdropVideos="False">
+		<main name="backdrop" visible="False"/>
+	</episodeView>
 </xml>
