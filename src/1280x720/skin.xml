@@ -547,7 +547,8 @@
         <widget name="postertext" transparent="1" zPosition="4" halign="left" position="150,500" size="200,40" font="Regular;22" backgroundColor="#000000"/>
         
         <widget name="backdrop" transparent="0" zPosition="-2" position="0,0" size="1280,720" alphatest="blend" />
-        <widget name="backdroptext" transparent="1" zPosition="4" halign="left" position="700,500" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#000000"/>
+        <widget name="backdropVideo" transparent="0" zPosition="-3" position="0,0" size="1280,720"/>
+		<widget name="backdroptext" transparent="1" zPosition="4" halign="left" position="700,500" size="200,40" font="Regular;22" foregroundColor="#ffffff" backgroundColor="#000000"/>
         
         <widget name="functionsContainer" transparent="0" zPosition="51" position="735,310" size="560,258" backgroundColor="#000000" />
 		<widget name="number_key_popup" zPosition="52" halign="left" valign="center" position="436,520" size="75,80" font="Saint;70" foregroundColor="#FF8C00" backgroundColor="#40000000" />
